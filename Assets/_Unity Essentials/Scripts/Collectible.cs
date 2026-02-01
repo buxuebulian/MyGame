@@ -9,6 +9,11 @@ public class Collectible : MonoBehaviour
     public GameObject onCollectEffect;
     public AudioClip onCollectSound;
     
+    void Awake()
+    {
+        //注册到管理器
+        CollectibleManager.Instance.RegisterCollectible();
+    }
     
     void Update()
     {
@@ -19,18 +24,17 @@ public class Collectible : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Collect();
+            Collected();
         }
     }
 
-    private void Collect()
+    void OnDestroy()
     {
-        // 重要：先通知管理器，再销毁对象
-        if (isRequiredForCompletion && CollectionManager.Instance != null)
-        {
-            CollectionManager.Instance.CollectItem();
-        }
-
+        //注销，例如被玩家拾取后Destroy
+        CollectibleManager.Instance?.UnregisterCollectible();
+    }
+    private void Collected()
+    {
         // 播放特效
         if (onCollectEffect != null)
         {
