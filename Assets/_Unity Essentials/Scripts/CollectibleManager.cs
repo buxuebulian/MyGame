@@ -36,7 +36,6 @@ public class CollectibleManager : MonoBehaviour
     public void RegisterCollectible()
     {
         currentCount++;
-        // 检查是否收集完成
         OnCollectibleCountChanged?.Invoke(currentCount);
     }
     public void UnregisterCollectible()
@@ -71,7 +70,6 @@ public class CollectibleManager : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(victorySound, Camera.main.transform.position);
         }
-
 
         //     // 可以在这里添加其他完成事件
         //     // UIManager.Instance.ShowVictoryMessage();
