@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using System; // Required for Type handling
 
-public class UpdateCollectibleCount : MonoBehaviour
+public class UpdateCollectibleCount2D : MonoBehaviour
 {
     private TextMeshProUGUI collectibleText; // Reference to the TextMeshProUGUI component
 
