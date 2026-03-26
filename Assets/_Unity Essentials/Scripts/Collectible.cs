@@ -12,7 +12,7 @@ public class Collectible : MonoBehaviour
     void Awake()
     {
         //注册到管理器
-        CollectibleManager.Instance.RegisterCollectible();
+        CollectibleManager.Instance?.RegisterCollectible();
     }
     
     void Update()

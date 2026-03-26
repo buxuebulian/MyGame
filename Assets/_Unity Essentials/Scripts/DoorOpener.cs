@@ -15,7 +15,7 @@ public class DoorOpener : MonoBehaviour
 
    private void OnTriggerEnter(Collider other)
    {
-       // Check if the object entering the trigger is the player (or another specified object)
+       // Check if the object entering the trigger is the player 
        if (other.CompareTag("Player")) // Make sure the player GameObject has the tag "Player"
        {
            if (doorAnimator != null)

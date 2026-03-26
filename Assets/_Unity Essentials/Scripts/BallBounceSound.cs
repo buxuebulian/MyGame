@@ -37,7 +37,7 @@ public class BallBounceSound : MonoBehaviour
         if (bounceSound != null && audioSource != null)
         {
             // 根据撞击力度调整音量
-            float volume = Mathf.Clamp(impactForce / 10.0f, 0.1f, 1.0f);
+            float volume = Mathf.Clamp(impactForce / 10.0f, 0.1f, 0.8f);
             audioSource.volume = volume;
 
             // 轻微随机化音调增加真实感

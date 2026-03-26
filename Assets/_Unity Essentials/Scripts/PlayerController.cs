@@ -19,10 +19,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
-        }
+        // if (Input.GetButtonDown("Jump"))
+        // {
+        //     rb.AddForce(Vector3.up * jumpForce, ForceMode.VelocityChange);
+        // }
     }
 
 
