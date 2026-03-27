@@ -76,9 +76,4 @@ public class CollectibleManager : MonoBehaviour
         //     // GameManager.Instance.LevelComplete();
     }
 
-    // 可选：重置进度
-    //     public void ResetCollection()
-    //     {
-    //         currentCount = 0;
-    //     }
 }
