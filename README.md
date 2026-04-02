@@ -106,9 +106,9 @@
 
 #### 安装步骤 (Installation Steps)
 
-1.  **克隆仓库**:
+1.  **克隆仓库**: 浅克隆（只下载最新版本，不包含历史记录）
     ```bash
-    git clone https://github.com/buxuebulian/MyGame.git
+    git clone --depth 1 https://github.com/buxuebulian/MyGame.git
     cd MyGame
     ```
 
